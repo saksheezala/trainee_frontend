@@ -41,7 +41,7 @@ function UpdateUser({ reload, refresh }) {
    try {
 
         await axios.put(
-            "http://localhost:4000/users",
+            `http://localhost:4000/users/${id}`,
             { email }
         );
 
